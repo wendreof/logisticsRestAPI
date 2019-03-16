@@ -28,4 +28,25 @@ import org.springframework.web.bind.annotation.*
     {
         return mRepository.save(product)
     }
+
+    @PutMapping("{id}")
+    fun alter(@PathVariable id: Long, @RequestBody product: Product): Product
+    {
+        if ( mRepository.exists(id) )
+        {
+            val safe = product.copy(id)
+            return mRepository.save( safe )
+        }
+
+        return Product()
+    }
+
+    @DeleteMapping("{id}")
+    fun delete(@PathVariable id: Long)
+    {
+        if( mRepository.exists(id) )
+        {
+            mRepository.delete(id)
+        }
+    }
 }
