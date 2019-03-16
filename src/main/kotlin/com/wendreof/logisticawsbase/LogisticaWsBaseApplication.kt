@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 @SpringBootApplication
 class LogisticaWsBaseApplication
 
-fun main(args: Array<String>) {
+fun main(args: Array<String>)
+{
 	SpringApplication.run(LogisticaWsBaseApplication::class.java, *args)
 }
