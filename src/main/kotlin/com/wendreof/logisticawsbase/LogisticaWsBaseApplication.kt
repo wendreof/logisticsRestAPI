@@ -8,5 +8,5 @@ class LogisticaWsBaseApplication
 
 fun main(args: Array<String>)
 {
-	SpringApplication.run(LogisticaWsBaseApplication::class.java, *args)
+	SpringApplication.run( LogisticaWsBaseApplication::class.java, *args )
 }

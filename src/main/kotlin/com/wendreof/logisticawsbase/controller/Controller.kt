@@ -24,13 +24,13 @@ import org.springframework.web.bind.annotation.*
 
 
     @PostMapping
-    fun add(@RequestBody product: Product): Product
+    fun add( @RequestBody product: Product ): Product
     {
         return mRepository.save(product)
     }
 
-    @PutMapping("{id}")
-    fun alter(@PathVariable id: Long, @RequestBody product: Product): Product
+    @PutMapping( "{id}" )
+    fun alter( @PathVariable id: Long, @RequestBody product: Product ): Product
     {
         if ( mRepository.exists(id) )
         {
@@ -41,8 +41,8 @@ import org.springframework.web.bind.annotation.*
         return Product()
     }
 
-    @DeleteMapping("{id}")
-    fun delete(@PathVariable id: Long)
+    @DeleteMapping("{id}" )
+    fun delete( @PathVariable id: Long )
     {
         if( mRepository.exists(id) )
         {

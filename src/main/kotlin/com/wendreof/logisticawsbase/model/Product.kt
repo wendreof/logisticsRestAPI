@@ -6,11 +6,18 @@ import javax.persistence.GeneratedValue
 import javax.persistence.Id
 
 @Entity
-data class Product (@Id
+data class Product
+(
+        @Id
         @GeneratedValue
-        @JsonProperty(value = "id", access = JsonProperty.Access.READ_ONLY)
-               val id: Long = 0L,
-               val remetente: String ="",
-               val descricao: String ="",
-               val preco: Double = 0.0
+        @JsonProperty( value = "id", access = JsonProperty.Access.READ_ONLY )
+                val id: Long = 0L,
+                val remetente: String ="",
+                val recebedor: String ="",
+                val descricao: String ="",
+                val assinatura: String ="",
+                val local: String ="",
+                val dataRecebimento: String ="",
+                val codBarras: String ="",
+                val quantidade: Int = 0
 )
