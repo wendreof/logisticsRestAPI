@@ -48,3 +48,4 @@ SET SCHEMA PUBLIC
 INSERT INTO PRODUCT VALUES(1,'dasdmlasbndjasnddkdasdmlasbndjasnddk','dasdmlasbndjasnddkdasdmlasbndjasnddk','10/04/2018','SSD M.2, Memoria Ram','S\u00e3o Jo\u00e3o da Boa Vista  - SP',99,'Eloa V.','Wendreo L. Fernandes')
 INSERT INTO PRODUCT VALUES(2,'dasdmlasbndjasnddkdasdmlasbndjasnddk','aslmlnad878934789037238040','11/11/1993','Playstation 4, Xbox One','Pocos de Caldas - MG',1111,'Sandra de Fatima','Bianca Rosa S.')
 INSERT INTO PRODUCT VALUES(3,'dasdmlasbndjasnddkdasdmlasbndjasnddk','aslmlnad878934789037238040','01/01/2001','Xiaomi Note, Kindle','Vargem Grande do Sul - SP',100,'Dudu & Hera','Nina Flor')
+INSERT INTO PRODUCT VALUES(4,'dasdmlasbndjasnddkdasdmlasbndjasnddk','aslmlnad878934789037238040','01/01/2001','Xiaomi Note, Kindle','Vargem Grande do Sul - SP',100,'Dudu & Hera','Nina Flor')
